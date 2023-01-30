@@ -23,7 +23,7 @@ const EditYo = (props) => {
                 type="text" 
                 name="name"
                 ref={register({required: {value: true, message: 'Valor requerido'}})}
-                />
+            />
             <div>
                 {errors?.name?.message}
             </div>
@@ -32,7 +32,7 @@ const EditYo = (props) => {
                 type="text" 
                 name="username" 
                 ref={register({required: {value: true, message: 'Valor requerido'}})}
-                />
+            />
             <div>
                 {errors?.username?.message}
             </div>
