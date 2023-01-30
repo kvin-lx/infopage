@@ -8,9 +8,9 @@ function App() {
 
   // Agregar usuarios
   const usersData = [
-    { id: uuidv4(), name: 'Tania', username: 'floppydiskette' },
-    { id: uuidv4(), name: 'Craig', username: 'siliconeidolon' },
-    { id: uuidv4(), name: 'Ben', username: 'benisphere' },
+    { id: uuidv4(), name: 'Oriol', username: 'floppydiskette' },
+    { id: uuidv4(), name: 'Katerine', username: 'siliconeidolon' },
+    { id: uuidv4(), name: 'Rossbel', username: 'benisphere' },
   ]
 
   const [users, setUsers] = useState(usersData)
