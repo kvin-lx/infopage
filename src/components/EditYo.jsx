@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 
 const EditYo = (props) => {
+
     const {register, errors, handleSubmit, setValue} = useForm({
         defaultValues: props.currentUser
     });
@@ -23,7 +24,7 @@ const EditYo = (props) => {
                 type="text" 
                 name="name"
                 ref={register({required: {value: true, message: 'Valor requerido'}})}
-            />
+                />
             <div>
                 {errors?.name?.message}
             </div>
@@ -32,7 +33,7 @@ const EditYo = (props) => {
                 type="text" 
                 name="username" 
                 ref={register({required: {value: true, message: 'Valor requerido'}})}
-            />
+                />
             <div>
                 {errors?.username?.message}
             </div>
@@ -43,4 +44,5 @@ const EditYo = (props) => {
         </form>
     );
 }
+ 
 export default EditYo;

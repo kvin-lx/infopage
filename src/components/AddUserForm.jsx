@@ -1,5 +1,5 @@
-import React from "react";
-import {userForm} from 'react-hook-form';
+import React from 'react';
+import { useForm } from 'react-hook-form'
 
 const AddUserForm = (props) => {
 
@@ -36,4 +36,5 @@ const AddUserForm = (props) => {
         </form>
     );
 }
+ 
 export default AddUserForm;
